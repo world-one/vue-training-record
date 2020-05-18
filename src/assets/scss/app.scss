@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+//bluma
+
+
+@import '~bulma/bulma';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+//base
+// @import './base/reset';
+// @import './base/font';
+@import './base/class';
+
+//layouts
+@import './layouts/header';
+@import './layouts/app';
+@import './layouts/footer';

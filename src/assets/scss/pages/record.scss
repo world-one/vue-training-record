@@ -1,0 +1,71 @@
+// @charset "UTF-8";
+.records{
+  margin-bottom: 24px;
+}
+.record{
+  position: relative;
+  border-bottom: 1px dashed #adadad;
+  padding: 0.5rem 0;
+  padding-right: calc( 34px + 4vw );
+  input[type=checkbox]:checked{
+    & + .record__checkbox{
+      border: 2px solid #48c774;
+      color: #48c774;
+      & > i{
+        line-height: 23px;
+        text-align: center;
+        display: block;
+      }
+
+      & + .record__data{
+        color: #acacac;
+        .record__input{
+          color: #acacac;
+        }
+      }
+    }
+  }
+}
+.record__checkbox{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  border: 2px solid #363636;
+  & i{display: none;}
+  @media screen and (max-width: 480px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.record__data{
+ margin-bottom: 0 !important;
+}
+.record__input{
+  padding-left: 12px;
+  font-size: 1.25rem;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  border:none;
+  border-bottom: 1px solid #909090;
+
+  @media screen and (max-width: 480px) {
+    width: 60px;
+    padding-left: 6px
+  }
+  @media screen and (max-width: 320px) {
+    width: 50px;
+  }
+}
+
+.record__delete__btn{
+  position: absolute;
+  right: 0;
+}
+
+.list__wrap{
+  overflow: auto;
+  height: calc( 100vh - 60px  );
+  min-height: 600px;
+}

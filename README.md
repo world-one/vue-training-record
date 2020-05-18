@@ -1,24 +1,21 @@
-# test
+# weight training record 
 
-## Project setup
-```
-yarn install
-```
+## use
+- vue-cli
+- typescript
+- vue-property-decorator
+- scss
+- bulma
+- fontawsome
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## directory structure
+- src
+  - views
+  - components
+  - assets/scss
+    - base
+    - layouts
+    - pages
+    - utilities
+  
+## 
