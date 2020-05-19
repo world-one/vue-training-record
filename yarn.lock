@@ -762,6 +762,11 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/google.visualization@^0.0.52":
+  version "0.0.52"
+  resolved "https://registry.yarnpkg.com/@types/google.visualization/-/google.visualization-0.0.52.tgz#3bf7ff3449be10250e59b5919fbbf5d93c251dca"
+  integrity sha512-zyY6z8JswGNRVK2TwZGOGLnRKiBdHAAyj5SwBMRwPM0DclvwMR91GZHiXH2/hNPJNlc3VdmFDQPVl1zzSYN6pw==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -3666,6 +3671,11 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.12"
     minimatch "~3.0.2"
+
+google-charts@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/google-charts/-/google-charts-2.0.0.tgz#29cf307f2e250c743daf5161816f14d0df2c6498"
+  integrity sha512-wxtwJTvA9MhFGCkMtUYtM+b1gQ8R6zSdQOxflRTAGr83+sd0bRDfrn1HaPIpxnqI75cImQBDp0ZTUXuwLhgPzA==
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.2.4"

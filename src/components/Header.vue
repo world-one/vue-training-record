@@ -44,11 +44,13 @@ export default class Header extends Vue {
   public toggleMenu() {
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
     if ($navbarBurgers.length > 0) {
-      $navbarBurgers.forEach( el => {
+      $navbarBurgers.forEach( ( el ) => {
           const target = el.dataset.target;
           const $target: HTMLElement | null = document.getElementById(target);
           el.classList.toggle('is-active');
-          if( $target ) $target.classList.toggle('is-active');
+          if ( $target ) {
+            $target.classList.toggle('is-active');
+          }
       });
     }
   }

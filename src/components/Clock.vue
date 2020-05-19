@@ -34,9 +34,9 @@ export default class Clock extends Vue {
   public time: string = '';
   public activeInterval: number = 0;
   constructor() {
-    super()
+    super();
   }
-  mounted() {
+  public mounted() {
     this.getDate();
   }
   public getDate() {
@@ -44,40 +44,41 @@ export default class Clock extends Vue {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
-    let hours, min, sec: any;
-    this.today = 
+    let hours: number | string;
+    let min: number | string;
+    let sec: number | string;
+    this.today =
       year + '년 ' +
-      month + '월 ' + 
-      day + '일 '
-    
-    setInterval(()=>{
+      month + '월 ' +
+      day + '일 ';
+    setInterval(() => {
       date = new Date();
       hours = date.getHours();
       min = date.getMinutes();
       sec = date.getSeconds();
-      if( hours.toString().length < 2 ) hours = '0' + hours;
-      if( min.toString().length < 2 ) min = '0' + min;
-      if( sec.toString().length < 2 ) sec = '0' + sec;
-      this.time = 
-        hours + ' : ' + 
-        min + ' : ' + 
+      if ( hours.toString().length < 2 ) { hours = '0' + hours; }
+      if ( min.toString().length < 2 ) { min = '0' + min; }
+      if ( sec.toString().length < 2 ) { sec = '0' + sec; }
+      this.time =
+        hours + ' : ' +
+        min + ' : ' +
         sec;
-    }, 1000)
+    }, 1000 );
   }
   public timerActive() {
     if ( this.activeInterval > 0 ) {
       clearInterval(this.activeInterval);
       this.activeInterval = 0;
       return;
-    };
+    }
     const no = this.timer;
-    this.activeInterval = setInterval(()=>{
+    this.activeInterval = setInterval(() => {
       this.timer--;
-      if ( this.timer == 0 ) {
+      if ( this.timer === 0 ) {
         clearInterval(this.activeInterval);
         this.timer = no;
       }
-    }, 1000)
+    }, 1000 );
   }
 }
 </script>
