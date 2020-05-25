@@ -1,11 +1,13 @@
 {
+  "homepage": "https://world-one.github.io/vue-training-record/",
   "name": "test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve --mode local",
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
@@ -24,6 +26,7 @@
     "@vue/cli-plugin-pwa": "^3.12.0",
     "@vue/cli-plugin-typescript": "^3.12.0",
     "@vue/cli-service": "^3.12.0",
+    "gh-pages": "^2.2.0",
     "google-charts": "^2.0.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
