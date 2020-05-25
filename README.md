@@ -1,5 +1,7 @@
 # weight training record 
 
+<https://world-one.github.io/vue-training-record>
+
 ## use
 - vue-cli
 - typescript
